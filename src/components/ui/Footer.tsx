@@ -61,8 +61,17 @@ export default function Footer() {
             <p className="text-verdea-stone/70">
               Nous intervenons principalement en Île-de-France, sur la Côte d&apos;Azur et en Suisse romande pour des projets d&apos;exception.
             </p>
-            <div className="w-full h-32 bg-verdea-deep rounded flex items-center justify-center border border-verdea-stone/10">
-              <span className="text-sm tracking-widest uppercase text-verdea-stone/50">Google Maps Embed</span>
+            <div className="w-full h-48 rounded overflow-hidden border border-verdea-stone/10 opacity-80 hover:opacity-100 transition-opacity duration-500">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4608331189495!2d2.300583215674724!3d48.86658097928833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fcc9011709b%3A0xe9c5bafb6020db20!2s12%20Av.%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="brightness-90 contrast-125 grayscale-[30%] mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
+              ></iframe>
             </div>
           </div>
         </div>
