@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Star, Mountain, Sun, TreePine, Droplets } from "lucide-react";
+import { Star } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -203,7 +203,7 @@ export default function SocialProof() {
                     <Star key={idx} size={18} fill="currentColor" strokeWidth={1} />
                   ))}
                 </div>
-                <p className="text-verdea-dark/80 italic flex-grow text-lg leading-relaxed font-light">"{testi.text}"</p>
+                <p className="text-verdea-dark/80 italic flex-grow text-lg leading-relaxed font-light">&quot;{testi.text}&quot;</p>
                 <div className="pt-6 border-t border-verdea-dark/5">
                   <p className="font-serif text-xl text-verdea-deep">{testi.name}</p>
                   <p className="text-xs tracking-widest uppercase text-verdea-dark/40 mt-2 font-medium">

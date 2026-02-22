@@ -196,7 +196,7 @@ export default function CTA() {
               <span className="italic text-verdea-gold">votre projet.</span>
             </h2>
             <p className="text-verdea-stone/70 text-lg md:text-xl font-light mb-12 leading-relaxed">
-              Chaque grand jardin commence par une rencontre. Confiez-nous vos envies, nos architectes paysagistes vous recontacteront sous 48h pour imaginer avec vous l'exception.
+              Chaque grand jardin commence par une rencontre. Confiez-nous vos envies, nos architectes paysagistes vous recontacteront sous 48h pour imaginer avec vous l&apos;exception.
             </p>
 
             {/* Step Indicators */}
@@ -335,7 +335,7 @@ export default function CTA() {
                 </div>
                 <h3 className="text-3xl font-serif text-verdea-gold mb-4">Privilège accordé</h3>
                 <p className="text-base font-light text-verdea-stone/80 leading-relaxed max-w-[280px]">
-                  Merci {formData.name}. L'atelier étudie votre projet à {formData.location}. Un de nos architectes vous contactera sous peu.
+                  Merci {formData.name}. L&apos;atelier étudie votre projet à {formData.location}. Un de nos architectes vous contactera sous peu.
                 </p>
               </div>
             )}
