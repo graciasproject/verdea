@@ -56,18 +56,18 @@ export default function Navigation() {
   return (
     <>
       <header
-        className={`fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 transition-all duration-500 rounded-[2.5rem] border ${
+        className={`fixed top-6 left-1/2 -translate-x-1/2 w-[95%] md:w-[92%] max-w-7xl z-50 transition-all duration-500 rounded-[2.5rem] border ${
           scrolled
-            ? "bg-verdea-stone/90 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.1)] py-3 px-2 border-white/20"
+            ? "bg-verdea-stone/95 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.1)] py-4 md:py-3 px-2 border-white/20"
             : "bg-transparent py-5 px-2 border-transparent"
         }`}
       >
-        <div className="w-full px-6 md:px-8 flex justify-between items-center">
+        <div className="w-full px-4 md:px-8 flex justify-between items-center">
           <Link href="/" className="z-50 relative flex items-center">
             <img 
               src="/logo-inline.png" 
               alt="Verdéa Logo" 
-              className={`h-10 sm:h-12 md:h-32 md:-my-6 w-auto object-contain transition-all duration-300 drop-shadow-sm ${!scrolled && !isOpen ? 'brightness-0 invert' : ''}`} 
+              className={`h-28 sm:h-32 md:h-32 -mx-4 md:mx-0 -my-8 md:-my-6 w-auto object-contain transition-all duration-300 drop-shadow-md origin-left scale-[0.85] sm:scale-90 md:scale-100 ${!scrolled && !isOpen ? 'brightness-0 invert' : 'brightness-75 contrast-125'}`} 
             />
           </Link>
 
@@ -99,6 +99,8 @@ export default function Navigation() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu principal"}
+            aria-expanded={isOpen}
             className={`md:hidden z-50 relative p-2 ${
               isOpen ? "text-verdea-stone" : scrolled ? "text-verdea-dark" : "text-verdea-stone"
             }`}

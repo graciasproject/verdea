@@ -169,7 +169,7 @@ export default function SocialProof() {
 
         {/* Partners */}
         <div className="partners-container py-20 flex flex-col items-center">
-          <p className="text-xs tracking-[0.3em] font-medium uppercase text-verdea-dark/50 mb-12 text-center">
+          <p className="text-xs tracking-[0.3em] font-bold uppercase text-verdea-dark/70 mb-12 text-center">
             Matières & Partenaires
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-80">

@@ -225,13 +225,14 @@ export default function CTA() {
 
                 <div className="relative group mt-4">
                   <input 
+                    id="location"
                     type="text" 
                     className="w-full bg-transparent border-b-2 border-verdea-stone/30 py-4 text-verdea-stone text-lg focus:outline-none focus:border-verdea-gold transition-colors interactive-hover"
                     value={formData.location}
                     onChange={(e) => setFormData({...formData, location: e.target.value})}
                     required
                   />
-                  <label className={`absolute left-0 transition-all duration-300 pointer-events-none uppercase tracking-widest font-medium ${formData.location ? "-top-4 text-xs text-verdea-gold" : "top-4 text-sm text-verdea-stone/60 group-focus-within:-top-4 group-focus-within:text-xs group-focus-within:text-verdea-gold"}`}>
+                  <label htmlFor="location" className={`absolute left-0 transition-all duration-300 pointer-events-none uppercase tracking-widest font-medium ${formData.location ? "-top-4 text-xs text-verdea-gold" : "top-4 text-sm text-verdea-stone/60 group-focus-within:-top-4 group-focus-within:text-xs group-focus-within:text-verdea-gold"}`}>
                     Localisation (Ville / CP)
                   </label>
                 </div>
@@ -272,12 +273,13 @@ export default function CTA() {
 
                 <div className="relative group mt-2">
                   <input 
+                    id="name"
                     required type="text" 
                     className="w-full bg-transparent border-b-2 border-verdea-stone/30 py-3 text-verdea-stone focus:outline-none focus:border-verdea-gold transition-colors interactive-hover"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                   />
-                  <label className={`absolute left-0 transition-all duration-300 pointer-events-none uppercase tracking-widest font-medium ${formData.name ? "-top-4 text-[10px] text-verdea-gold" : "top-3 text-[11px] text-verdea-stone/60 group-focus-within:-top-4 group-focus-within:text-[10px] group-focus-within:text-verdea-gold"}`}>
+                  <label htmlFor="name" className={`absolute left-0 transition-all duration-300 pointer-events-none uppercase tracking-widest font-medium ${formData.name ? "-top-4 text-[10px] text-verdea-gold" : "top-3 text-[11px] text-verdea-stone/60 group-focus-within:-top-4 group-focus-within:text-[10px] group-focus-within:text-verdea-gold"}`}>
                     Nom complet
                   </label>
                 </div>
@@ -285,23 +287,25 @@ export default function CTA() {
                 <div className="grid grid-cols-2 gap-6 mt-2">
                   <div className="relative group">
                     <input 
+                      id="email"
                       required type="email" 
                       className="w-full bg-transparent border-b-2 border-verdea-stone/30 py-3 text-verdea-stone focus:outline-none focus:border-verdea-gold transition-colors interactive-hover"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                     />
-                    <label className={`absolute left-0 transition-all duration-300 pointer-events-none uppercase tracking-widest font-medium ${formData.email ? "-top-4 text-[10px] text-verdea-gold" : "top-3 text-[10px] text-verdea-stone/60 group-focus-within:-top-4 group-focus-within:text-verdea-gold"}`}>
+                    <label htmlFor="email" className={`absolute left-0 transition-all duration-300 pointer-events-none uppercase tracking-widest font-medium ${formData.email ? "-top-4 text-[10px] text-verdea-gold" : "top-3 text-[10px] text-verdea-stone/60 group-focus-within:-top-4 group-focus-within:text-verdea-gold"}`}>
                       Courriel
                     </label>
                   </div>
                   <div className="relative group">
                     <input 
+                      id="phone"
                       required type="tel" 
                       className="w-full bg-transparent border-b-2 border-verdea-stone/30 py-3 text-verdea-stone focus:outline-none focus:border-verdea-gold transition-colors interactive-hover"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
                     />
-                    <label className={`absolute left-0 transition-all duration-300 pointer-events-none uppercase tracking-widest font-medium ${formData.phone ? "-top-4 text-[10px] text-verdea-gold" : "top-3 text-[10px] text-verdea-stone/60 group-focus-within:-top-4 group-focus-within:text-verdea-gold"}`}>
+                    <label htmlFor="phone" className={`absolute left-0 transition-all duration-300 pointer-events-none uppercase tracking-widest font-medium ${formData.phone ? "-top-4 text-[10px] text-verdea-gold" : "top-3 text-[10px] text-verdea-stone/60 group-focus-within:-top-4 group-focus-within:text-verdea-gold"}`}>
                       Téléphone
                     </label>
                   </div>

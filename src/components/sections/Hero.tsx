@@ -120,6 +120,7 @@ export default function Hero() {
           muted
           loop
           playsInline
+          aria-hidden="true"
           className="object-cover w-full h-full opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-900/20 to-[#0A0A0A]" />

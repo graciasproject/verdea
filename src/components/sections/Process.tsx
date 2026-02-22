@@ -77,7 +77,7 @@ export default function Process() {
     <section ref={containerRef} id="process" className="bg-verdea-stone text-verdea-dark overflow-hidden relative">
       <div className="py-24 md:py-32 h-auto lg:h-screen flex flex-col justify-center">
         <div className="container mx-auto px-6 md:px-12 mb-12 lg:mb-20 flex flex-col items-center text-center">
-          <p className="text-verdea-gold font-medium tracking-widest uppercase text-xs mb-4">
+          <p className="text-verdea-deep font-bold tracking-widest uppercase text-xs mb-4">
             Notre Méthodologie
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-verdea-deep">

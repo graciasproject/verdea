@@ -13,14 +13,14 @@ export default function Footer() {
               Conception et aménagement de jardins contemporains et extérieurs haut de gamme pour particuliers exigeants.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="p-2 bg-verdea-deep rounded-full hover:bg-verdea-gold hover:text-verdea-dark transition-colors">
-                <Instagram size={20} />
+              <a href="#" aria-label="Suivez-nous sur Instagram" className="p-2 bg-verdea-deep rounded-full hover:bg-verdea-gold hover:text-verdea-dark transition-colors">
+                <Instagram size={20} aria-hidden="true" />
               </a>
-              <a href="#" className="p-2 bg-verdea-deep rounded-full hover:bg-verdea-gold hover:text-verdea-dark transition-colors">
-                <Facebook size={20} />
+              <a href="#" aria-label="Suivez-nous sur Facebook" className="p-2 bg-verdea-deep rounded-full hover:bg-verdea-gold hover:text-verdea-dark transition-colors">
+                <Facebook size={20} aria-hidden="true" />
               </a>
-              <a href="#" className="p-2 bg-verdea-deep rounded-full hover:bg-verdea-gold hover:text-verdea-dark transition-colors">
-                <Linkedin size={20} />
+              <a href="#" aria-label="Suivez-nous sur LinkedIn" className="p-2 bg-verdea-deep rounded-full hover:bg-verdea-gold hover:text-verdea-dark transition-colors">
+                <Linkedin size={20} aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -41,15 +41,15 @@ export default function Footer() {
             <h3 className="text-xl font-serif text-verdea-gold">Contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="text-verdea-gold shrink-0 mt-1" size={20} />
+                <MapPin className="text-verdea-gold shrink-0 mt-1" size={20} aria-hidden="true" />
                 <span>12 Avenue Montaigne,<br />75008 Paris, France</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="text-verdea-gold shrink-0" size={20} />
+                <Phone className="text-verdea-gold shrink-0" size={20} aria-hidden="true" />
                 <span>+33 (0)1 42 68 53 00</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="text-verdea-gold shrink-0" size={20} />
+                <Mail className="text-verdea-gold shrink-0" size={20} aria-hidden="true" />
                 <span>contact@verdea-paysage.fr</span>
               </li>
             </ul>
@@ -69,6 +69,7 @@ export default function Footer() {
                 style={{ border: 0 }}
                 allowFullScreen={false}
                 loading="lazy"
+                title="Google Maps: Zone d'intervention Verdéa"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="brightness-90 contrast-125 grayscale-[30%] mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
               ></iframe>
