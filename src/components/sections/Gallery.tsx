@@ -64,9 +64,9 @@ export default function Gallery() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const cards = gsap.utils.toArray(".gallery-card");
+      const cards = gsap.utils.toArray<HTMLElement>(".gallery-card");
       
-      cards.forEach((card: any) => {
+      cards.forEach((card) => {
         const image = card.querySelector(".parallax-bg");
         const speed = parseFloat(card.dataset.speed || "1");
         
