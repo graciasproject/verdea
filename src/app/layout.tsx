@@ -72,10 +72,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
       </head>
       <body
-        className={`${playfair.variable} ${inter.variable} antialiased`}
+        className={`${playfair.variable} ${inter.variable} antialiased overflow-x-hidden`}
+        suppressHydrationWarning
       >
         <Navigation />
-        <main>{children}</main>
+        <main className="overflow-x-hidden">{children}</main>
         <Footer />
       </body>
     </html>

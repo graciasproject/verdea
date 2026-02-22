@@ -140,7 +140,7 @@ export default function SocialProof() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-32 bg-verdea-stone text-verdea-dark relative">
+    <section ref={sectionRef} className="py-32 bg-verdea-stone text-verdea-dark relative overflow-hidden">
       {/* Decorative gradient orb */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-verdea-gold/20 rounded-full blur-[120px] pointer-events-none opacity-50" />
 

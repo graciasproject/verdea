@@ -67,7 +67,7 @@ export default function Navigation() {
             <img 
               src="/logo-inline.png" 
               alt="Verdéa Logo" 
-              className={`h-24 md:h-32 -my-6 w-auto object-contain transition-all duration-300 drop-shadow-sm ${!scrolled && !isOpen ? 'brightness-0 invert' : ''}`} 
+              className={`h-10 sm:h-12 md:h-32 md:-my-6 w-auto object-contain transition-all duration-300 drop-shadow-sm ${!scrolled && !isOpen ? 'brightness-0 invert' : ''}`} 
             />
           </Link>
 

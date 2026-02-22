@@ -105,7 +105,7 @@ export default function Gallery() {
   return (
     <section ref={sectionRef} id="projects" className="py-32 bg-white text-verdea-dark">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+        <div className="flex flex-col items-center text-center justify-center mb-20 gap-8">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-verdea-deep mb-8 leading-tight">
               Nos Réalisations
